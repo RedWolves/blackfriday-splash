@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Friday Sale - Ralph's Bricks</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('store.jpg') center/cover no-repeat fixed;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+        .overlay {
+            background: rgba(255, 255, 255, 0.55); color: #000;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 40px 20px;
+            padding: 20px;
+        }
+        .logo img {
+            max-width: 90%;
+            margin-bottom: 25px;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 3.2rem;
+            margin: 0 0 20px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 6px #ccc;
+        }
+        .sale-msg {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 4px #000;
+        }
+        .dates {
+            font-size: 1.7rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.4rem; }
+            .sale-msg { font-size: 1.4rem; }
+        }
+            .bf-sticker {
+            display: inline-block;
+            padding: 15px 25px;
+            background: #ff2255;
+            color: #fff;
+            border-radius: 12px;
+            transform: rotate(-3deg);
+            animation: pulse 1.2s infinite ease-in-out;
+            box-shadow: 0 0 12px rgba(255, 0, 80, 0.9);
+        }
+        @keyframes pulse {
+            0% { transform: rotate(-3deg) scale(1); }
+            50% { transform: rotate(-3deg) scale(1.07); }
+            100% { transform: rotate(-3deg) scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="logo">
+            <img src="logo.png" alt="Store Logo" width="436" height="290" />
+        </div>
+        <h1 class="bf-sticker">BLACK FRIDAY MEGA SALE</h1>
+        <div class="sale-msg" style="margin-top:40px;">Save up to <strong>75% OFF</strong> storewide!</div>
+        <div class="sale-msg">Massive discounts on parts, minifigs, and more.</div>
+        <div class="dates">Sale ends Monday, December 1st</div>
+    </div>
+</body>
+</html>
